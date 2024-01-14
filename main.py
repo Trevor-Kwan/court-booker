@@ -52,7 +52,7 @@ class CourtBooker:
             password_box.send_keys(self.password)
 
             # attempt login
-            self.driver.find_element(by='xpath', value='/html/body/section/form/button').click()
+            self.driver.find_element(by='xpath', value='/html/body/div/div/section/form/button').click()
 
             # check if login was successful
             try:
