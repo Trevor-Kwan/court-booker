@@ -66,7 +66,7 @@ class CourtBooker:
                 self.username, self.password = login_details_input()
 
     def begin_booking(self):
-        self.driver.get('https://booking-new.sport.gov.mo/zh/onlinepay/booking')
+        self.driver.get('https://member.sport.gov.mo/ams/login?_locale=zh&app=sport-booking&webview=0')
         if datetime.today() <= self.target_dt:
             print(f"Waiting Until {self.target_dt}")
             pause.until(self.target_dt)  # wait until booking begins
